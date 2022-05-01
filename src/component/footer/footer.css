@@ -1,0 +1,46 @@
+.footer-container{
+    /* position: absolute; */
+    margin-top: auto;
+    width: 100%;
+    /* bottom: -100%; */
+    display: flex;
+    justify-content: space-around;
+    /* margin: 4rem 0 0; */
+    padding: 2rem 0 6rem;
+    background-color: #2d3f01;
+    color: #f6e47d;
+}
+
+.footer-title{
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin: 2rem 0 0.5rem;
+}
+
+.address,.email{
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.footer-social{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0 0.5rem;
+}
+
+.social-icon{
+    margin-right: 2rem;
+    font-size: 1.6rem;
+}
+
+@media only screen and (max-width:660px) {
+    .footer-container{
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .copyright{
+        text-align: center;
+        padding: 1rem 0;
+    }
+}
