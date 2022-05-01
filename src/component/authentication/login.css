@@ -1,0 +1,109 @@
+.login-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    margin: 1rem auto 3rem;
+    color: #2d3f01;
+    width: 30%;
+}
+
+.title{
+    font-size: 1rem;
+}
+
+.login-title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    width: 100%;
+}
+
+.form-container>label{
+    margin: 0.9rem 0 0;
+}
+
+.form-container>label>p{
+    margin: 0 0 -5px;
+    padding: 5px 3px;
+    font-weight: 600;
+}
+
+.form-container>label>input{
+    width: 100%;
+    padding: 0.4rem;
+    border: 3px solid #2d3f0111;
+    border-radius: 5px;
+}
+.form-container>label>textarea{
+    width: 100%;
+    padding: 0.4rem;
+    border: 3px solid #2d3f0111;
+    border-radius: 5px;
+}
+
+.submit-btn{
+    margin: 0.6rem 0;
+    padding: 0.4rem 0;
+    background-color: #2d3f01;
+    color: blanchedalmond;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.or{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.or>div{
+    /* height: ; */
+    width: 100%;
+    border: 1px dotted #2d3f01;
+    margin: 0 0.4rem 10px;
+}
+
+.or>p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.social-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem 0 3rem;
+}
+
+.social-login>span{
+    font-size: 4rem;
+    margin: 0 1rem;
+}
+
+.social-login>span:last-child{
+    color: black;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+@media only screen and (max-width:660px) {
+    .login-container{
+        width: 75%;
+    }
+}
+@media only screen and (min-width:660px) and (max-width:998px) {
+    .login-container{
+        width: 50%;
+    }
+}
