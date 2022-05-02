@@ -87,3 +87,43 @@
     font-size:1.2rem;
     font-weight: 500;
 }
+
+@media only screen and (max-width:660px) {
+    .banner-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0;
+        gap:0;
+        width: 100%;
+        padding: 1rem 0.8rem;
+    }
+    .banner-text{
+        padding: 0;
+    }
+    .banner-img{
+        width: 100%;
+        aspect-ratio: 1;
+        padding: 0;
+    }
+
+    .service-container{
+        grid-template-columns: 1fr;
+        margin: 0.5rem;
+    }
+}
+@media only screen and (min-width:660px) and (max-width:998px) {
+    .banner-container{
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        gap:0;
+        width: 100%;
+        padding: 0;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    .service-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

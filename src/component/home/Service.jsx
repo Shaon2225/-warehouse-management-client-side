@@ -40,7 +40,7 @@ const Service = () => {
     ]
   return (
     <div>
-        <h1 className='title'>Our services</h1>
+        <h1 className='title'>Our Products</h1>
         <div className='service-container'>
             {
                 service.map(e => <Servicecart key={e._id} el={e}></Servicecart>)
