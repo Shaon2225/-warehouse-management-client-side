@@ -1,0 +1,30 @@
+.banner-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin: 3rem 5rem;
+}
+
+.banner-text{
+    padding: 5rem auto 1rem;
+    margin: 6rem 0;
+    color: #1A3C40;
+}
+
+.banner-title{
+    font-weight: 800;
+    padding: 1.5rem 0 2.5rem;
+}
+
+.inventory-btn{
+    color: antiquewhite;
+    background-color: #1A3C40;
+    border: 2px solid transparent;
+    border-radius: 0.6rem;
+    padding: 0.4rem 1.5rem;
+    font-weight: 500;
+}
+
+.banner-img{
+    padding: 0.2rem 2rem;
+}
