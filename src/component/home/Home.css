@@ -18,7 +18,7 @@
 
 .inventory-btn{
     color: antiquewhite;
-    background-color: #1A3C40;
+    background-color: #2d3f01;
     border: 2px solid transparent;
     border-radius: 0.6rem;
     padding: 0.4rem 1.5rem;
@@ -27,4 +27,63 @@
 
 .banner-img{
     padding: 0.2rem 2rem;
+}
+
+/* ======================== banner section done =============*/
+
+.title{
+    text-align: center;
+    color: #1A3C40;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.item-d{
+    padding: 1.5rem;
+}
+
+.title-basic{
+    color: #1A3C40;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin: 2rem 5rem;
+}
+
+.item-body{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 0.5rem;
+}
+
+.item-img{
+    width: 90%;
+    height: 450px;
+    padding: 0.3rem;
+}
+
+.stock{
+    color: #07d333;
+    /* padding-left: 1rem; */
+    font-size: 0.8rem;
+}
+
+.details>li{
+    padding-left: 0.8rem;
+}
+
+.update-btn{
+    background-color: #2d3f01;
+    color: antiquewhite;
+    text-align: center;
+    padding: 0.4rem 0;
+    border: 0;
+    border-radius: 0 0 0.5rem 0.5rem;
+    width: 100%;
+    font-size:1.2rem;
+    font-weight: 500;
 }

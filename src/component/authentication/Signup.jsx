@@ -72,7 +72,7 @@ const Signup = () => {
         <input type="submit" className="submit-btn" value="Sign Up" />
       </form>
       <div>
-        <h4 className='title'>Already have an account? <Link to={'/login'}>Log in</Link></h4>
+        <h4 className='title-login'>Already have an account? <Link to={'/login'}>Log in</Link></h4>
       </div>
       <div className="or">
         <div></div>

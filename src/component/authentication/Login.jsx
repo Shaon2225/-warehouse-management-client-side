@@ -91,10 +91,10 @@ const Login = () => {
         <input type="submit" className="submit-btn" value="Log In" />
       </form>
       <div>
-        <h4 className="title">
+        <h4 className="title-login">
           Don't have an account? <Link to={"/signup"}>Sign Up</Link>
         </h4>
-        <h4 className="title cursor" onClick={forgatePassword}>
+        <h4 className="title-login cursor" onClick={forgatePassword}>
           Forgate password
         </h4>
       </div>
