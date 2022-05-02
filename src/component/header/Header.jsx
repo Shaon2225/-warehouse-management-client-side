@@ -10,7 +10,7 @@ const Header = () => {
   const [user, loading, error] = useAuthState(auth);
   
   return (
-    <Navbar sticky="top" collapseOnSelect expand="lg" bg="white" variant="white">
+    <Navbar sticky="top" expand="lg" bg="white">
       <Container>
         <Navbar.Brand><Link to={'/'}><img className="header-logo" src="https://i.ibb.co/qC0VGGM/logo.png"></img></Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
