@@ -39,9 +39,19 @@ const ItemDetails = () => {
   const updateProductQuantity = e =>{
     e.preventDefault();
     const value = e.target.quantity.value;
-    const newDetail = { ...detail, quantity: value};
-    setDetail(newDetail);
-    e.target.quantity.value = '';
+    const url1 = `http://localhost:5000/services/updatestock/${id}`;
+    const body = {
+      email: user.email,
+      quantity: value
+    };
+    fetch(url1,{
+      method: "PUT",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(body)
+    })
+    .then((res) => res.json())
+    .then((data) => {if(data.acknowledged) setUp(!up)});
+    e.target.reset();
   }
 
   return (
