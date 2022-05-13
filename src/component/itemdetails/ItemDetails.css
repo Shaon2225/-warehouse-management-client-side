@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+    margin: 5rem;
 }
 
 .itemdetail-img{
@@ -31,4 +32,25 @@
     padding: 0.4rem;
     border: 3px solid #2d3f0111;
     border-radius: 5px;
+}
+
+@media only screen and (max-width:660px) {
+    .itemdetail-container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 2rem;
+    }
+    .itemdetail-img{
+        margin: 0;
+    }
+}
+@media only screen and (min-width:661px) and (max-width:981px) {
+    .itemdetail-container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 2rem;
+    }
+    .itemdetail-img{
+        margin: 0;
+    }
 }
