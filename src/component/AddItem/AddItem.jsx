@@ -34,7 +34,7 @@ const AddItem = () => {
         .then(data =>{
             if(data.acknowledged){
                 Swal.fire({
-                    position: 'top-end',
+                    position: 'center',
                     icon: 'success',
                     title: 'New item has been saved',
                     showConfirmButton: false,
@@ -50,6 +50,8 @@ const AddItem = () => {
                   })
             }
         })
+
+        e.target.reset();
     }
 
   return (
@@ -58,27 +60,27 @@ const AddItem = () => {
         <form className='form-container' onSubmit={addNewItem}>
             <label>
                 <p>Product Name</p>
-                <input type="text" ref={productNameRef} />
+                <input type="text" ref={productNameRef} required/>
             </label>
             <label>
                 <p>Product Image</p>
-                <input type="text" ref={productImgRef} />
+                <input type="text" ref={productImgRef} required/>
             </label>
             <label>
                 <p>Price</p>
-                <input type="number" ref={productPriceRef} />
+                <input type="number" ref={productPriceRef} required />
             </label>
             <label>
                 <p>Quantity</p>
-                <input type="number" ref={productQuantityRef} />
+                <input type="number" ref={productQuantityRef} required/>
             </label>
             <label>
                 <p>Supplier Name</p>
-                <input type="text" ref={supplierNameRef} />
+                <input type="text" ref={supplierNameRef} required/>
             </label>
             <label>
                 <p>Product details</p>
-                <textarea type="text" ref={productDetialRef} />
+                <textarea type="text" ref={productDetialRef} required/>
             </label>
             <input type="submit" className='submit-btn' value="Add Product" />
         </form>
