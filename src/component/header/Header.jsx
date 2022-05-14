@@ -22,7 +22,12 @@ const Header = () => {
               </Link>
               }</Nav.Link>
             <Nav.Link>{user?
-                <span onClick={()=>signOut(auth)} className='signin-btn'>Sign out</span> : 
+                <>
+                  <Link to={'/additem'} className='text-decoration-none nav-route me-3'>Add Item</Link>
+                  <Link to={'/manageitem'} className='text-decoration-none nav-route me-3'>Manage Item</Link>
+                <span onClick={()=>signOut(auth)} className='signin-btn'>Sign out</span>
+                </>
+                : 
                 <Link className="text-decoration-none signin-btn" to={"/signup"}>Sign in</Link>}</Nav.Link>
           </Nav>
         </Navbar.Collapse>

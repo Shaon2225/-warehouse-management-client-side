@@ -38,7 +38,7 @@ const ItemDetails = () => {
 
   const updateProductQuantity = e =>{
     e.preventDefault();
-    const value = e.target.quantity.value;
+    const value = parseInt(e.target.quantity.value) + parseInt(detail.quantity);
     const url1 = `http://localhost:5000/services/updatestock/${id}`;
     const body = {
       email: user.email,
