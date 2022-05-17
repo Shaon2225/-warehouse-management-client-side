@@ -1,6 +1,6 @@
 # mobiphone website
 
-##live site link : 
+##live site link : https://mobiphone-e7613.web.app/
 
 
 ## libary used:
