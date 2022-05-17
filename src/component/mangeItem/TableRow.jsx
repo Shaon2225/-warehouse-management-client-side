@@ -17,7 +17,7 @@ const TableRow = ({ device,up,setUp }) => {
       confirmButtonText: 'Yes, delete it!'
     }).then((result) => {
       if (result.isConfirmed) {
-        const url = `http://localhost:5000/dltitem/${id}`;
+        const url = `https://fast-tor-50406.herokuapp.com/dltitem/${id}`;
     fetch(url, {
       method: "DELETE",
       headers: {

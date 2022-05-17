@@ -25,7 +25,7 @@ const AddItem = () => {
         const email = user.email;
         const newProduct = {title,img, price, quantity,supplierName,detail,email};
         
-        fetch('http://localhost:5000/additem',{
+        fetch('https://fast-tor-50406.herokuapp.com/additem',{
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(newProduct)

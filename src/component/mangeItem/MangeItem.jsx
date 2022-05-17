@@ -7,7 +7,7 @@ const MangeItem = () => {
   const [devices,sethevices] = useState([]);
 
   useEffect(()=>{
-    fetch('http://localhost:5000/devices')
+    fetch('https://fast-tor-50406.herokuapp.com/devices')
     .then(res=> res.json())
     .then(data=> sethevices(data))
   },[up])

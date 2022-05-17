@@ -12,7 +12,7 @@ const ItemDetails = () => {
   const [detail, setDetail] = useState({});
   const [up, setUp] = useState(true);
 
-  const url = `http://localhost:5000/services/${id}`;
+  const url = `https://fast-tor-50406.herokuapp.com/services/${id}`;
   
   useEffect(() => {
     fetch(url)
@@ -22,7 +22,7 @@ const ItemDetails = () => {
 
   const handleDeleivery = async() => {
     let x = parseInt(detail.quantity)-1;
-    const url1 = `http://localhost:5000/services/update/${id}`;
+    const url1 = `https://fast-tor-50406.herokuapp.com/services/update/${id}`;
     const body = {
       email : user.email,
       quantity : x
@@ -39,7 +39,7 @@ const ItemDetails = () => {
   const updateProductQuantity = e =>{
     e.preventDefault();
     const value = parseInt(e.target.quantity.value) + parseInt(detail.quantity);
-    const url1 = `http://localhost:5000/services/updatestock/${id}`;
+    const url1 = `https://fast-tor-50406.herokuapp.com/services/updatestock/${id}`;
     const body = {
       email: user.email,
       quantity: value
